@@ -1,12 +1,33 @@
-import { Link } from "react-router-dom";
-import classes from "./Home.module.css";
+import FilterVintage from '@mui/icons-material/FilterVintage';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import { Link } from 'react-router-dom';
+import classes from './Home.module.css';
 
 const Home: React.FC = () => {
   return (
-    <div className={classes.Home}>
-      <h2>React Base</h2>
-      <Link to="/search">Search</Link>
-      <Link to="/favorites">Favorites</Link>
+    <div>
+      <div className={classes.Home}>
+        <FilterVintage />
+        <h1>Base Project</h1>
+      </div>
+      <Grid container justifyContent="center" spacing={2} padding="20px">
+        <Grid item xs={3}>
+          <Button component={Link} to="/search" variant="contained" fullWidth>
+            Search
+          </Button>
+        </Grid>
+        <Grid item xs={3}>
+          <Button
+            component={Link}
+            to="/favorites"
+            variant="contained"
+            fullWidth
+          >
+            Favorites
+          </Button>
+        </Grid>
+      </Grid>
     </div>
   );
 };
