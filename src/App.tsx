@@ -1,8 +1,8 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from "./pages/home";
-import Search from "./pages/search";
-import Favorites from "./pages/favorites";
+import Home from './pages/home';
+import Search from './pages/search';
+import Favorites from './pages/favorites';
 
 function App() {
   return (
