@@ -2,6 +2,7 @@ import FilterVintage from '@mui/icons-material/FilterVintage';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
+import MovieList from './components/MovieList';
 import classes from './Home.module.css';
 
 const Home: React.FC = () => {
@@ -28,6 +29,7 @@ const Home: React.FC = () => {
           </Button>
         </Grid>
       </Grid>
+      <MovieList />
     </div>
   );
 };
